@@ -1,0 +1,123 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f5f7fa;
+  color: #333;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  width: 100%;
+}
+
+.timer-container{
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+#datetime-picker {
+  padding: 0.75rem 1rem;
+  border: 2px solid #e1e5eb;
+  border-radius: 8px;
+  font-size: 1rem;
+  width: 230px;
+  margin-right: 0.5rem;
+  outline: none;
+  transition: all 0.2s ease;
+  color: #333;
+  background-color: #fff;
+}
+
+
+#datetime-picker:hover {
+  border-color: #000;
+}
+
+#datetime-picker:focus, 
+#datetime-picker:active {
+  border-color: #4E75FF;
+  box-shadow: 0 0 0 1px rgba(78, 117, 255, 0.2);
+}
+
+#datetime-picker:disabled {
+  background-color: #f5f5f5;
+  border-color: #e1e5eb;
+  color: #999;
+  cursor: not-allowed;
+}
+
+button[data-start] {
+  padding: 0.75rem 1.5rem;
+  background-color: #4E75FF;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+button[data-start]:hover {
+  background-color: #3a5ccc;
+}
+
+button[data-start]:active {
+  background-color: #2945a0;
+  transform: translateY(1px);
+}
+
+button[data-start]:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(78, 117, 255, 0.3);
+}
+
+button[data-start]:disabled {
+  background-color: #cccccc;
+  color: #999999;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.timer {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-top: 2.5rem;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.value {
+  font-size: 3.5rem;
+  font-weight: 700;
+  color: #4E75FF;
+  background-color: #f5f7fa;
+  border-radius: 8px;
+  min-width: 100px;
+  padding: 0.5rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+.label {
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-top: 0.5rem;
+  color: #64748b;
+  font-weight: 500;
+}
