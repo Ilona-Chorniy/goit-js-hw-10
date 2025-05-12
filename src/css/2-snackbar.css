@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600;700&display=swap');
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f5f7fa;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.snackbar-container {
+  max-width: 600px;
+  margin: 32px auto;
+  padding: 32px;
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 500;
+  color: #333;
+}
+
+input[type="number"] {
+  width: 100%;
+  padding: 12px 16px;
+  font-size: 16px;
+  border: 2px solid #e1e5eb;
+  border-radius: 8px;
+  outline: none;
+  transition: all 0.2s ease;
+  color: #333;
+  background-color: #fff;
+}
+
+input[type="number"]:hover {
+  border-color: #000;
+}
+
+input[type="number"]:focus,
+input[type="number"]:active {
+  border-color: #4E75FF;
+  box-shadow: 0 0 0 1px rgba(78, 117, 255, 0.2);
+}
+
+fieldset {
+  border: 2px solid #e1e5eb;
+  border-radius: 8px;
+  padding: 19.2px;
+  transition: all 0.2s ease;
+}
+
+fieldset:hover {
+  border-color: #000;
+}
+
+legend {
+  padding: 0 8px;
+  font-weight: 600;
+  color: #333;
+}
+
+fieldset label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 12px;
+  font-weight: normal;
+  cursor: pointer;
+}
+
+fieldset label:last-child {
+  margin-bottom: 0;
+}
+
+input[type="radio"] {
+  accent-color: #4E75FF;
+  width: 18px;
+  height: 18px;
+}
+
+button[type="submit"] {
+  padding: 12px 24px;
+  background-color: #4E75FF;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  margin-top: 8px;
+}
+
+button[type="submit"]:hover {
+  background-color: #3a5ccc;
+}
+
+button[type="submit"]:active {
+  background-color: #2945a0;
+  transform: translateY(1px);
+}
+
+button[type="submit"]:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(78, 117, 255, 0.3);
+}
